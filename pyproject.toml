@@ -6,10 +6,13 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "ipykernel==6.29.5",
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
     "librosa==0.10.*",
     "matplotlib==3.9.*",
     "mne>=1.10.1",
     "nltk==3.9.*",
+    "notebook>=7.4.5",
     "numpy==1.26.*",
     "pandas==2.2.3",
     "pillow==10.4.*",
@@ -18,4 +21,12 @@ dependencies = [
     "torch==2.4.1",
     "torchvision==0.19.1",
     "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "pytest>=8.4.1",
+    "ruff>=0.12.11",
 ]
