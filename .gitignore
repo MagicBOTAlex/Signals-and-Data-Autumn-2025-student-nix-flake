@@ -1,3 +1,9 @@
+# Any saved models, presumably some kind of NN will be in these folders... 
+*saved_models/
+
+/assignment_1/data/*
+__pycache__/
+
 week_10/glove.6B/
 week_10/wiki-news-300d-1M.vec
 /week_5/eeg_data/
