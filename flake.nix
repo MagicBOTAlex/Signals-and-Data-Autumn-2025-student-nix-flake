@@ -7,7 +7,8 @@
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages.${system};
-      in {
+      in
+      {
         devShells.default = (pkgs.buildFHSEnv {
           name = "python-uv-dev";
           targetPkgs = pkgs:
@@ -66,14 +67,11 @@
             echo "Using Python: $(which python3.12)"
             echo "Python version: $(python3.12 --version)"
 
-            # Only initialize if pyproject.toml doesn't exist
-            if [ ! -f pyproject.toml ]; then
               echo "Initializing UV project with Python 3.12..."
               uv init --python python3.12
               uv add jupyter ipykernel ipywidgets notebook
               uv add torch  # This should work now with Python 3.12
               uv add --dev black ruff isort pytest
-            fi
 
             # Sync dependencies
             uv sync
