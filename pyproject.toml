@@ -21,6 +21,7 @@ dependencies = [
   "torch==2.4.*",
   "torchvision==0.19.*",
   "tqdm>=4.67.1",
+  "uncertainties>=3.2.3",
 ]
 
 [dependency-groups]
