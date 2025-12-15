@@ -50,6 +50,7 @@
               blas
               lapack
               gfortran
+              portaudio
             ];
 
           runScript = "bash";
