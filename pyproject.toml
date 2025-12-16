@@ -15,6 +15,7 @@ dependencies = [
   "nltk==3.9.*",
   "notebook>=7.4.5",
   "numpy==1.26.*",
+  "opencv-python>=4.11.0.86",
   "pandas==2.2.3",
   "pillow==10.4.*",
   "scipy==1.13.*",

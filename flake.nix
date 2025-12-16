@@ -51,6 +51,9 @@
               lapack
               gfortran
               portaudio
+              libGL
+              libGLU
+              glib
             ];
 
           runScript = "bash";
